@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
@@ -6,6 +7,11 @@ const cors = require('cors');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'build')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build/', 'index.html'));
+  });
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.mailgun.org',

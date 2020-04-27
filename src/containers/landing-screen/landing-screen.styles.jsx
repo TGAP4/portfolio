@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../data/images/background.jpg';
+import img from '../../data-files/images/background.jpg';
 
 
 const getSize = ({size}) => {

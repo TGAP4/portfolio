@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './about.styles';
 
-import Img from '../../data/images/bio.jpg';
-import Text from '../../data/texts/about-bio.js';
+import Img from '../../data-files/images/bio.jpg';
+import Text from '../../data-files/texts/about-bio.js';
 
 
 const About = ({refProp}) => {
