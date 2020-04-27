@@ -20,7 +20,7 @@ app.post('/submit', (req, res) => {
     transporter.sendMail({
         to: process.env.FORWARDING_EMAIL,
         subject: 'From Developer Portfolio',
-        text: `Name: ${req.body[0]} Email: ${req.body[1]}\nMessage: ${req.body[2]}`
+        text: `Name: ${req.body[0]}\nEmail: ${req.body[1]}\nMessage: ${req.body[2]}`
     })
     res.json('Success');
 })
