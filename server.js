@@ -8,10 +8,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'build')));
-  app.get('*', (req, res) => {
+app.use(express.static('build/'));
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build/', 'index.html'));
-  });
+});
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.mailgun.org',
@@ -31,4 +31,4 @@ app.post('/submit', (req, res) => {
     res.json('Success');
 })
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 3000);
