@@ -10,9 +10,9 @@ const Projects = ({refProp}) => {
     <S.ProjectsPage ref={refProp}>
       <S.Title>MY PROJECTS</S.Title>
       <S.Projects>
-        {ProjectsList.reverse().map(project => 
+        {ProjectsList.reverse().map((project, i) => 
           <ProjectCard
-            key={project.id}
+            key={i}
             title={project.title}
             description={project.description}
             repoLink={project.repoLink}

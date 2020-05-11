@@ -29,7 +29,7 @@ const ProjectCard = ({title, description, repoLink, liveLink, thumbnail}) => {
           : null}
         </S.Links>
       </S.TextContent>
-      <S.Thumbnail src={thumbnail} alt='Project Thumbnail' />
+      <S.Thumbnail img={thumbnail} />
     </S.ProjectCard>
   );
 };

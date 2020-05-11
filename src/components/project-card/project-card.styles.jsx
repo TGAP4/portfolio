@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
+const getImg = ({img}) => {
+  return img;
+}
+
 export const ProjectCard = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 200px;
   color: black;
   margin: 5px;
   padding: 15px 15px 12px 15px;
@@ -26,9 +30,13 @@ export const Title = styled.div`
   font-weight: 600;
 `;
 
-export const Thumbnail = styled.img`
+export const Thumbnail = styled.div`
   width: 200px;
-  height: auto;
+  height: 140px;
+  background-image: url(${getImg});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 export const Links = styled.div`
