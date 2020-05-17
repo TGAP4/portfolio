@@ -17,7 +17,7 @@ const App = () => {
     projectsRef: useRef(null),
     contactRef: useRef(null)
   };
-  const {landingRef, aboutRef, skillsRef, projectsRef, contactRef} = refProps;
+  const {landingRef, aboutRef, skillsRef, projectsRef} = refProps;
 
   return (
     <S.App>
