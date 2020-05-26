@@ -40,5 +40,12 @@ export default [
     repoLink: `https://github.com/TGAP4/crown-clothing`,
     liveLink: `https://strawberry-crumble-12957.herokuapp.com`,
     thumbnail: require('./thumbnails/crownclothing.png')
+  },
+  {
+    title: `Pastapedia`,
+    description: `Web app using React/Redux that teaches users what pasta dishes can made using ingredients that they already own.  Also allows users to search recipes by name and/or ingredients to learn about each dish and what else is needed to make them.`,
+    repoLink: `https://github.com/TGAP4/pastapedia`,
+    liveLink: `https://pastapedia.herokuapp.com`,
+    thumbnail: require('./thumbnails/pastapedia.png')
   }
 ];
