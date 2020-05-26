@@ -24,8 +24,7 @@ export const ContactPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 575px;
-  height: 95vh;
+  min-height: 95vh;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#73d6fd), color-stop(44%,#64a7ff), color-stop(100%, #73d6fd));
   margin-top: 120px;
   padding: 90px 40px 20px 40px;
@@ -97,7 +96,7 @@ export const SubmitButton = styled.button`
 `;
 
 export const NavButton = styled.div`
-  margin: 4vh 0 0;
+  margin: 20px 0 0;
   padding: 7px 19px 0;
   background-color: transparent;
   font-size: 2rem;
