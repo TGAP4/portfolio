@@ -15,7 +15,7 @@ const ProjectCard = ({title, description, repoLink, liveLink, thumbnail}) => {
             target='_blank' 
             rel='noopener noreferrer'
           >
-            Source Code
+            GitHub
           </S.ProjectLink>
           {liveLink ?
             <S.ProjectLink 
