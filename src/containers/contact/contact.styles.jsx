@@ -63,8 +63,9 @@ export const Input = styled.input`
   border-radius: 5px;
   box-shadow: 0 0 5px gray;
   font-size: 16px;
-  font-weight: 300;
-  ${getEmpty}
+  font-weight: 400;
+  font-family: 'Titillium Web';
+  ${getEmpty};
 `
 
 export const MessageText = styled.textarea`
@@ -79,8 +80,9 @@ export const MessageText = styled.textarea`
   word-wrap: break-word;
   overflow-y: hidden;
   font-size: 16px;
-  font-weight: 300;
-  ${getEmpty}
+  font-family: 'Titillium Web';
+  font-weight: 400;
+  ${getEmpty};
 `;
 
 export const SubmitButton = styled.button`
@@ -93,6 +95,12 @@ export const SubmitButton = styled.button`
   border-style: none;
   font-size: 14px;
   font-weight: 300;
+  background-color: #eeeeee;
+  color: #155ab4;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 `;
 
 export const NavButton = styled.div`
