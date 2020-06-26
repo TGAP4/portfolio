@@ -42,6 +42,12 @@ export default [
     logo: require('./logos/css3.jpg')
   },
   {
+    id: 18,
+    title: 'Ruby on Rails',
+    description: `Ruby on Rails is a framework that includes everything needed to create database-backed web applications according to the MVC pattern`,
+    logo: require('./logos/rubyonrails.jpg')
+  },
+  {
     id: 8,
     title: 'GraphQL',
     description: `GraphQL is a data query and manipulation language for API's and a runtime for fulfilling queries with existing data.`,
